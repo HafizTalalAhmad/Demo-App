@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Elevate Builders — MUSTAQEEM Construction ERP interactive demonstration">
   <title>Elevate Builders | MUSTAQEEM ERP Demo</title>
-<link rel="stylesheet" href="style.css?v=96">
+  <link rel="stylesheet" href="style.css?v=50">
 </head>
 <body>
   <div id="login" class="login-shell">
@@ -27,7 +27,7 @@
         <p>Explore the Elevate Builders digital operating platform.</p>
         <label>Email address<input value="demo@elevatebuilders.sa" aria-label="Email address"></label>
         <label>Password<input type="password" value="mustaqeem" aria-label="Password"></label>
-        <label>Login as<select id="loginRole" aria-label="Select demonstration role"><option value="User">Marketing User</option><option value="Accountant">Accountant</option><option value="Director">Director</option></select></label>
+        <label>Login as<select id="loginRole" aria-label="Select demonstration role"><option value="User">Marketing User</option><option value="Director Planning">Director Planning</option></select></label>
         <button id="signIn" class="primary">Enter demo <span>→</span></button>
         <small>Interactive presentation • Sample data only</small>
       </div>
@@ -36,12 +36,12 @@
 
   <div id="app" class="app hidden">
     <aside class="sidebar">
-      <div class="side-brand mustaqeem-lockup"><img src="mustaqeem-logo.png" alt="MUSTAQEEM logo"><div><b>MUSTAQEEM</b><small>CONSTRUCT ERP</small></div><button id="sidebarPin" class="sidebar-pin" title="Keep sidebar open" aria-label="Keep sidebar open" aria-pressed="false"><span aria-hidden="true">📌</span><em>Keep open</em></button></div>
+      <div class="side-brand mustaqeem-lockup"><img src="mustaqeem-logo.png" alt="MUSTAQEEM logo"><div><b>MUSTAQEEM</b><small>CONSTRUCT ERP</small></div><button id="sidebarPin" class="sidebar-pin" title="Keep sidebar open" aria-label="Keep sidebar open" aria-pressed="false">📌</button></div>
       <nav id="nav">
         <button class="nav-item active" data-page="dashboard"><span>⌂</span> Executive Dashboard</button>
         <p>BUSINESS LIFECYCLE</p>
         <div class="nav-group marketing-nav-group">
-          <button class="nav-item nav-parent" data-page="marketing"><span>◇</span> Marketing & Tendering <i>6</i><span class="nav-caret" data-menu-toggle aria-label="Expand or collapse forms">⌄</span></button>
+          <button class="nav-item nav-parent" data-page="marketing"><span>◇</span> Marketing & Tendering <i>6</i></button>
           <div class="nav-submenu" aria-label="Marketing and Tendering forms">
             <button data-marketing-form="Contract Opportunities"><span>1</span>Contract Opportunities</button>
             <button data-marketing-form="Qualification Review"><span>2</span>Qualification Review</button>
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="nav-group project-nav-group">
-          <button class="nav-item nav-parent" data-page="projectcosting"><span>▱</span> Projects & Costing <i>6</i><span class="nav-caret" data-menu-toggle aria-label="Expand or collapse forms">⌄</span></button>
+          <button class="nav-item nav-parent" data-page="projectcosting"><span>▱</span> Projects & Costing <i>6</i></button>
           <div class="nav-submenu" aria-label="Projects and Costing forms">
             <button data-project-form="Awarded Projects"><span>1</span>Awarded Projects</button>
             <button data-project-form="Mobilization"><span>2</span>Mobilization</button>
@@ -63,34 +63,34 @@
           </div>
         </div>
         <div class="nav-group operations-nav-group">
-          <button class="nav-item nav-parent" data-page="operations"><span>▦</span> Operations & Modules <i>5</i><span class="nav-caret" data-menu-toggle aria-label="Expand or collapse forms">⌄</span></button>
+          <button class="nav-item nav-parent" data-page="operations"><span>▦</span> Operations & Modules <i>8</i></button>
           <div class="nav-submenu" aria-label="Operations and Modules forms">
             <button data-module-form="operations|Revenue &amp; CRM Cycle"><span>1</span>Revenue &amp; CRM Cycle</button>
             <button data-module-form="operations|Billing &amp; Collections"><span>2</span>Billing &amp; Collections</button>
             <button data-module-form="operations|Purchase Cycle"><span>3</span>Purchase Cycle</button>
-            <button data-module-form="operations|Attendance &amp; Payroll"><span>4</span>Attendance &amp; Payroll</button>
-            <button data-module-form="operations|Site &amp; Other Expenses"><span>5</span>Site &amp; Other Expenses</button>
+            <button data-module-form="operations|HRM &amp; Manpower"><span>4</span>HRM &amp; Manpower</button>
+            <button data-module-form="operations|Attendance &amp; Payroll"><span>5</span>Attendance &amp; Payroll</button>
+            <button data-module-form="operations|Inventory Management"><span>6</span>Inventory Management</button>
+            <button data-module-form="operations|Fixed Assets"><span>7</span>Fixed Assets</button>
+            <button data-module-form="operations|Site &amp; Other Expenses"><span>8</span>Site &amp; Other Expenses</button>
           </div>
         </div>
-        <button class="nav-item" data-page="externalportals"><span>◎</span> External Portals</button>
         <p>CONTROL</p>
         <div class="nav-group accounts-nav-group">
-          <button class="nav-item nav-parent" data-page="accounts"><span>▥</span> Accounts <i>10</i><span class="nav-caret" data-menu-toggle aria-label="Expand or collapse forms">⌄</span></button>
+          <button class="nav-item nav-parent" data-page="accounts"><span>▥</span> Accounts <i>8</i></button>
           <div class="nav-submenu" aria-label="Accounts forms">
             <button data-module-form="accounts|General Ledger &amp; Journals"><span>1</span>General Ledger &amp; Journals</button>
             <button data-module-form="accounts|Accounts Payable"><span>2</span>Accounts Payable</button>
             <button data-module-form="accounts|Accounts Receivable"><span>3</span>Accounts Receivable</button>
-            <button data-module-form="accounts|Cash &amp; Bank Management"><span>4</span>Cash &amp; Bank Management</button>
-            <button data-module-form="accounts|VAT &amp; Tax Entries"><span>5</span>VAT &amp; Tax Entries</button>
-            <button data-module-form="accounts|Chart of Accounts"><span>6</span>Chart of Accounts</button>
-            <button data-module-form="accounts|Opening Balances"><span>7</span>Opening Balances</button>
-            <button data-module-form="accounts|HRM &amp; Manpower"><span>8</span>HRM &amp; Manpower</button>
-            <button data-module-form="accounts|Inventory Management"><span>9</span>Inventory Management</button>
-            <button data-module-form="accounts|Fixed Assets"><span>10</span>Fixed Assets</button>
+            <button data-module-form="accounts|Cash Receipts &amp; Payments"><span>4</span>Cash Receipts &amp; Payments</button>
+            <button data-module-form="accounts|Bank &amp; Reconciliation"><span>5</span>Bank &amp; Reconciliation</button>
+            <button data-module-form="accounts|VAT &amp; Tax Entries"><span>6</span>VAT &amp; Tax Entries</button>
+            <button data-module-form="accounts|Chart of Accounts"><span>7</span>Chart of Accounts</button>
+            <button data-module-form="accounts|Opening Balances"><span>8</span>Opening Balances</button>
           </div>
         </div>
         <div class="nav-group finance-nav-group">
-          <button class="nav-item nav-parent" data-page="finance"><span>◫</span> Finance <i>7</i><span class="nav-caret" data-menu-toggle aria-label="Expand or collapse forms">⌄</span></button>
+          <button class="nav-item nav-parent" data-page="finance"><span>◫</span> Finance <i>6</i></button>
           <div class="nav-submenu" aria-label="Finance forms">
             <button data-module-form="finance|Revenue YTD"><span>1</span>Revenue YTD</button>
             <button data-module-form="finance|Project Costs"><span>2</span>Project Costs</button>
@@ -98,28 +98,21 @@
             <button data-module-form="finance|Receivables"><span>4</span>Receivables</button>
             <button data-module-form="finance|Cash Forecast"><span>5</span>Cash Forecast</button>
             <button data-module-form="finance|Unposted Entries"><span>6</span>Unposted Entries</button>
-            <button data-module-form="finance|Month-End Close"><span>7</span>Month-End Close</button>
           </div>
         </div>
         <button class="nav-item" data-page="approvals"><span>✓</span> Approvals <i>7</i></button>
         <button class="nav-item" data-page="reports"><span>⌁</span> Reports</button>
-        <button class="nav-item" data-page="validation"><span>◎</span> Demo Validation</button>
       </nav>
       <div class="side-footer"><span>HA</span><div><b>Hafiz Ahmad</b><small>System Administrator</small></div><button id="logout">↪</button></div>
     </aside>
-    <button id="sidebarBackdrop" class="sidebar-backdrop" aria-label="Close navigation menu" tabindex="-1"></button>
 
     <main>
       <header class="topbar">
-        <button id="menuToggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
-        <div class="workspace-context"><label for="companySwitcher">Company</label><select id="companySwitcher" aria-label="Select active company"><option>Elevate Builders</option></select><h2 id="pageTitle">Good afternoon, Hafiz</h2></div>
-        <label class="language-switcher" for="languageSwitcher"><span>Language</span><select id="languageSwitcher" aria-label="Change interface language"><option value="en">English</option><option value="ar">العربية</option></select></label>
+        <button id="menuToggle" class="menu-toggle">☰</button>
+        <div class="workspace-context"><label for="companySwitcher">Company</label><select id="companySwitcher" aria-label="Select active company"><option>Elevate Builders</option></select><p id="crumb">Executive workspace</p><h2 id="pageTitle">Good afternoon, Hafiz</h2></div>
         <div class="top-actions"><button id="globalSearch" title="Search" aria-label="Open global search">⌕</button><button id="notifications" title="Notifications" aria-label="Open notifications">♢<i></i></button><button id="settingsShortcut" title="Settings &amp; Setups" aria-label="Open settings and setups">⚙</button><img src="elevate-logo.jpeg" alt="Elevate Builders"></div>
       </header>
-      <div class="page-body">
-        <div class="breadcrumb-bar"><p id="crumb">Executive workspace</p></div>
-        <section id="content" class="content"></section>
-      </div>
+      <section id="content" class="content"></section>
     </main>
   </div>
 
@@ -136,6 +129,6 @@
     </section>
   </div>
   <script src="xlsx.full.min.js"></script>
-<script src="app.js?v=96"></script>
+<script src="app.js?v=53"></script>
 </body>
 </html>
